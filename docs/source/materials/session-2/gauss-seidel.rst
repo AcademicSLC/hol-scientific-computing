@@ -24,6 +24,19 @@ Proses penyelesaian persamaan linear dengan menggunakan *Gauss Seidel Method*.
 
 Pertama-tama lakukanlah pengecekan apakah persamaan linear merupakan *Diagonally Dominant*. 
 
+.. code-block:: python
+    Xs = [
+        [
+            [14, 1, 1], 
+            [3, 12, 3], 
+            [7, 3, 13]
+        ]
+    ]
+
+    Ys = [
+        [6,5,3]
+    ]
+
 .. code-block:: python 
     def isDiagonallyDominant(x):
         diag = np.diag(np.abs(x))
@@ -68,4 +81,18 @@ Selanjut nya setelah function *isDiagonallyDominant* dibuat, buatlah function *G
         return False
 
 Pada function *Gauss Seidel* dilakukan iterasi untuk mendapatkan nilai *eucledian distance* yang lebih kecil dari epsilon. Selanjutnya  kita buat variable ``init_val`` yang diisikan dengan ``np,zeros`` sebanyak size yang dimiliki oleh matrix ``x``. Kita isikan nilai ``init_val`` dengan nilai *zeros*.
-Setelah itu, kita ambil diagonal dari ``x`` dengan menggunakan ``np.diag``. kemudian pada code ``x = -x`` kita pindah ruas x dari kiri ke kanan. Selanjutnya
+Setelah itu, kita ambil diagonal dari ``x`` dengan menggunakan ``np.diag``. kemudian pada code ``x = -x`` kita pindah ruas x dari kiri ke kanan. Selanjutnya diagonal pada ``x`` kita rubah menjadi 0 dengan menggunakan ``np.fill_diagonal()``. Yang kemudian kita akan melakukan iterasi pada persamaan Linear
+yang sudah diberikan untuk mendapatkan eucledian distance yang akan digunakan untuk melakukan validasi apakah persamaan linear atau matrix tersebut *konvergen* atau tidak. Yang dimana nilai matrix akan divalidasi dengan nilai epsilon atau thresehold. 
+
+Selanjutnya kita akan melakukan print data pada persamaan matrix yang sudah dibuat.
+
+.. code-block:: python
+    for i, (x, y) in enumerate(zip(Xs, Ys)):
+        if check_diag_dominant(np.array(x)):
+            if gauss_seidel(x, y, 10, 0.01):
+                print("Converged!")
+            else:
+                print("Not Converged")
+
+Terakhir, kita akan melakukan iterasi pada matrix dengan menggunakan ``zip()`` untuk menggabungkan dua array dan menjabarkan nya pada variable ``(x, y)`` dan mengeceknya apakah matrix yang kita miliki
+adalah diagonal dominant yang akan return **True** atau **False**.
