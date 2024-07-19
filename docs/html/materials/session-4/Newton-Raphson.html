@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Newton Raphson Method &mdash; Lumache 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/plot_directive.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Mini Excercise" href="mini-excercise.html" />
+    <link rel="prev" title="Bisection Method" href="Bisection-Method.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Lumache
+          </a>
+              <div class="version">
+                0.1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Session 1 - Python basics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/python-basics.html"><strong>Python Basics</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/python-numbers.html"><strong>Python Numbers</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/strings.html"><strong>String</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/numpy-method.html"><em>Numpy Method</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/casting.html"><strong>Casting</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/python-data-structure.html">Data structure di Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/mini-practice.html"><em>Mini Practice</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 2 - Gauss Seidel</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-2/gauss-seidel.html">System Linear Equation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-2/mini-practice.html"><em>Mini Practice</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 3 - Least Square Regression</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/Interpolation.html">Interpolation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/Least-Square-Regression.html">Least Square Regression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/Newton-Polynomial-Interpolation.html">Newton Polynomial Interpolation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/Solving-Least-Square-Regression.html">Solving Problem dengan Menggunakan Persamaan Least Square Regression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/Cubic-Spline-Interpolation.html">Cubic Spline Interpolation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/mini-excercise.html">Mini Excercise</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 4 - Root of equations</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Root-of-Equations.html">Root of Equations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Bisection-Method.html">Bisection Method</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Newton Raphson Method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mini-excercise.html">Mini Excercise</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 5 - Riemann integral</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-5/Rieman-Integral.html">Riemans Integral</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-5/Trapezoid.html">Trapezoid</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-5/mini-exercise.html">Mini Excercise</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Lumache</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Newton Raphson Method</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/materials/session-4/Newton-Raphson.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="newton-raphson-method">
+<h1>Newton Raphson Method<a class="headerlink" href="#newton-raphson-method" title="Permalink to this heading"></a></h1>
+<p><strong>Newton raphson</strong> adalah sebuah teknik yang digunakan untuk memecahkan permasalahan dari nilai</p>
+<p><strong>akar-akar</strong> pada suatu <em>persamaan</em>. <strong>Newton raphson</strong> ditemukan oleh <strong>Sir Isaac Newton</strong> dan <strong>Joseph Raphson</strong>.</p>
+<p><strong>Newton raphson</strong> adalah <em>algoritma</em> untuk menentukan nilai akar pada suatu <em>persamaan</em>. dengan menggunakan nilai</p>
+<p><strong>initial</strong> untuk menentukan <em>akar-akar</em> selanjutnya. Rumus untuk <em>menentukan akar</em> pada <strong>Newton Raphson</strong> adalah sebagai berikut.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x1</span> <span class="o">=</span> <span class="n">x0</span> <span class="o">-</span> <span class="n">f</span><span class="p">(</span><span class="n">x0</span><span class="p">)</span><span class="o">/</span><span class="sa">f</span><span class="s1">&#39;(x0)</span>
+</pre></div>
+</div>
+<p>x0 = initial value
+f = adalah persamaan initial
+f’ = adalah turunan dari persamaan intial</p>
+<p>Selanjutnya kita akan menjelaskan implementasi dari Newton raphson sebagai berikut.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</pre></div>
+</div>
+<p>Pertama-tama kita bisa import library numpy terlebih dahulu.</p>
+<p>Kemudian masukkan intial persamaan yang sudah ditentukan sebagai berikut.</p>
+<p>untuk persamaannya adalah <code class="docutils literal notranslate"><span class="pre">x^2</span> <span class="pre">-</span> <span class="pre">2</span> <span class="pre">=</span> <span class="pre">0</span></code>.</p>
+<div class="math notranslate nohighlight">
+\[x^2-2=0\]</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">2</span>
+</pre></div>
+</div>
+<p>Setelah kita memasukkan <em>initial persamaannya</em>, selanjutnya adalah menyiapkan</p>
+<p><em>persamaan turunan</em> dari persamaan initial sebagai berikut.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">g</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="mi">2</span><span class="o">*</span><span class="n">x</span>
+</pre></div>
+</div>
+<p>Selanjutnya adalah siapkan function dengan nama <code class="docutils literal notranslate"><span class="pre">newton_raph</span></code> sebagai berikut.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">newton_raph</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span> <span class="n">tol</span><span class="p">):</span>
+    <span class="n">x1</span> <span class="o">=</span> <span class="n">x0</span> <span class="o">-</span> <span class="n">f</span><span class="p">(</span><span class="n">x0</span><span class="p">)</span> <span class="o">/</span> <span class="n">g</span><span class="p">(</span><span class="n">x0</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">x1</span><span class="p">))</span> <span class="o">&lt;</span> <span class="n">tol</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">x1</span><span class="p">)</span>
+        <span class="k">return</span>
+
+    <span class="n">newton_raph</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">tol</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Selanjutnya adalah kita masukkan rumus dari newton raphson untuk menentukan root nya yaitu dengan rumus</p>
+<p><code class="docutils literal notranslate"><span class="pre">x0</span> <span class="pre">-</span> <span class="pre">f(x0)</span> <span class="pre">/</span> <span class="pre">g(x0)</span></code> kemudian kita dapat melakukan validasi apakah nilai absolute dari <code class="docutils literal notranslate"><span class="pre">f(x1)</span></code> memiliki</p>
+<p>nilai lebih kecil dari tolerance, jika iya maka akan kita print nilai root nya dan kemudian kita return.</p>
+<p>Jika tidak maka akan kita panggil function <code class="docutils literal notranslate"><span class="pre">newton_raph</span></code> secara recursive.</p>
+<p>Terakhir tinggal kita panggil fucntion <strong>newton_raph</strong> sebagai berikut.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">newton_raph</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Maka hasilnya adalah sebagai berikut.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mf">1.4166666666666667</span>
+</pre></div>
+</div>
+<p>Selanjutnya, kita akan menampilkan implementasi <strong>full code</strong> dari <strong>Newton Raphson</strong> berikut.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="k">def</span> <span class="nf">newton_raph</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span> <span class="n">tol</span><span class="p">):</span>
+    <span class="n">x1</span> <span class="o">=</span> <span class="n">x0</span> <span class="o">-</span> <span class="n">f</span><span class="p">(</span><span class="n">x0</span><span class="p">)</span> <span class="o">/</span> <span class="n">g</span><span class="p">(</span><span class="n">x0</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">x1</span><span class="p">))</span> <span class="o">&lt;</span> <span class="n">tol</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">x1</span><span class="p">)</span>
+        <span class="k">return</span>
+
+    <span class="n">newton_raph</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">tol</span><span class="p">)</span>
+
+<span class="n">newton_raph</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Berikut adalah <strong>penjelasan lengkap</strong> dari <a class="reference external" href="https://pythonnumericalmethods.studentorg.berkeley.edu/notebooks/chapter19.03-Bisection-Method.html">Bisection method</a>.</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Bisection-Method.html" class="btn btn-neutral float-left" title="Bisection Method" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="mini-excercise.html" class="btn btn-neutral float-right" title="Mini Excercise" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Graziella.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

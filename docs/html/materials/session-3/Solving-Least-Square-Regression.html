@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solving Problem dengan Menggunakan Persamaan Least Square Regression &mdash; Lumache 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/plot_directive.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Cubic Spline Interpolation" href="Cubic-Spline-Interpolation.html" />
+    <link rel="prev" title="Newton Polynomial Interpolation" href="Newton-Polynomial-Interpolation.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Lumache
+          </a>
+              <div class="version">
+                0.1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Session 1 - Python basics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/python-basics.html"><strong>Python Basics</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/python-numbers.html"><strong>Python Numbers</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/strings.html"><strong>String</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/numpy-method.html"><em>Numpy Method</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/casting.html"><strong>Casting</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/python-data-structure.html">Data structure di Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/mini-practice.html"><em>Mini Practice</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 2 - Gauss Seidel</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-2/gauss-seidel.html">System Linear Equation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-2/mini-practice.html"><em>Mini Practice</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 3 - Least Square Regression</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Interpolation.html">Interpolation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Least-Square-Regression.html">Least Square Regression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Newton-Polynomial-Interpolation.html">Newton Polynomial Interpolation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Solving Problem dengan Menggunakan Persamaan Least Square Regression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cubic-Spline-Interpolation.html">Cubic Spline Interpolation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mini-excercise.html">Mini Excercise</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 4 - Root of equations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-4/Root-of-Equations.html">Root of Equations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-4/Bisection-Method.html">Bisection Method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-4/Newton-Raphson.html">Newton Raphson Method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-4/mini-excercise.html">Mini Excercise</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 5 - Riemann integral</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-5/Rieman-Integral.html">Riemans Integral</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-5/Trapezoid.html">Trapezoid</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-5/mini-exercise.html">Mini Excercise</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Lumache</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Solving Problem dengan Menggunakan Persamaan Least Square Regression</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/materials/session-3/Solving-Least-Square-Regression.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="solving-problem-dengan-menggunakan-persamaan-least-square-regression">
+<h1>Solving Problem dengan Menggunakan Persamaan Least Square Regression<a class="headerlink" href="#solving-problem-dengan-menggunakan-persamaan-least-square-regression" title="Permalink to this heading"></a></h1>
+<p>Sekarang, saatnya kita melakukan penyelesaian permasalahan persamaan dengan menggunakan metode Least Square Regression.</p>
+<dl class="simple">
+<dt>Terdapat 2 cara penyelesaian dengan metode Least Square Regression, yaitu sebagai berikut:</dt><dd><ul class="simple">
+<li><p>direct inverse</p></li>
+<li><p>pseudo inverse</p></li>
+</ul>
+</dd>
+</dl>
+<p>Berikut adalah 2 metode yang bisa menyelesaiakan persamaan dengan menggunakan metode Least Square Regression, kita akan membahas dari <code class="docutils literal notranslate"><span class="pre">direct</span> <span class="pre">inverse</span></code> terlebih dahulu.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+<p>yang akan kita lakukan pertama kali adalah melakukan import library yang dibutuhkan untuk melakukan least square regression. Berikut adalah library yang dibutuhkan yaitu
+<code class="docutils literal notranslate"><span class="pre">numpy</span></code> dan <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>.</p>
+<p>selanjutnya kita siapkan terlebih dahulu variable <code class="docutils literal notranslate"><span class="pre">x</span></code> yang berisikan matrix dan juga variable <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p>
+<p>selanjutnya kita ubah setiap nilai array yang sudah disediakan menjadi numpy array dengan menggunakan <code class="docutils literal notranslate"><span class="pre">np.array</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">15</span><span class="p">]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">14</span><span class="p">,</span><span class="mi">16</span><span class="p">]</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>selanjutnya kita siapkan nilai initial dari variable <code class="docutils literal notranslate"><span class="pre">A</span></code> yang berisikan nilai 1 dengan menggunakan <code class="docutils literal notranslate"><span class="pre">np.ones</span></code> sepanjang <code class="docutils literal notranslate"><span class="pre">length</span></code> array dari x.</p>
+<p>yang kita kombinasikan dengan <code class="docutils literal notranslate"><span class="pre">np.vstack</span></code>, <code class="docutils literal notranslate"><span class="pre">vstack</span></code> ini bisa digunakan untuk mengubah stack array menjadi vertical dalam bentuk row (baris). yang kemudian array yang sudah kita operasikan dengan <code class="docutils literal notranslate"><span class="pre">vstack</span></code></p>
+<p>kita lakukan proses <em>transpose</em> dengan menggunakan symbol <code class="docutils literal notranslate"><span class="pre">.T</span></code></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">([</span><span class="n">x</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">))])</span><span class="o">.</span><span class="n">T</span>
+</pre></div>
+</div>
+<p>Selanjutnya kita bentuk array <code class="docutils literal notranslate"><span class="pre">y</span></code> menjadi kolom vector dengan menggunakan <code class="docutils literal notranslate"><span class="pre">np.newaxis</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">y</span><span class="p">[:,</span> <span class="n">np</span><span class="o">.</span><span class="n">newaxis</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Setelah kita mempersiapkan variable <code class="docutils literal notranslate"><span class="pre">x</span></code> dan <code class="docutils literal notranslate"><span class="pre">y</span></code> menjadi bentuk kolom vector, kita lakukan proses</p>
+<p>analisis dan kalkukalasi dengan menggunakan proses <em>direct inverse</em> dari formula sebagai berikut <code class="docutils literal notranslate"><span class="pre">(A^T*A)^-1</span> <span class="pre">*</span> <span class="pre">A^T*A</span></code>.</p>
+<p>hasil dari kalkulasi <em>direct inverse</em> mendapatkan hasil sebagai berikut.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[[</span><span class="mf">1.</span><span class="p">]</span>
+ <span class="p">[</span><span class="mf">1.</span><span class="p">]]</span>
+</pre></div>
+</div>
+<p>hasil dari kalkulasi <em>direct inverse</em> berisikan 2 index array, index ke-0 menandakan gradien dari garis persamaan dan index ke-1 dari dari array menandakan sebagai konstanta.</p>
+<p>Selanjutnya setelah kita mendapatkan kedua data tersebut, langkah selanjutnya adalah melakukan visualisasi garis persamaan dengan menggunakan metode Least Square Regression (direct inverse).</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;b.&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">alpha</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">x</span> <span class="o">+</span> <span class="n">alpha</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Selanjutnya kita bisa melakukan proses plotting dengan menggunakan variable <code class="docutils literal notranslate"><span class="pre">x</span></code> dan <code class="docutils literal notranslate"><span class="pre">y</span></code> beserta persamaan garis larus</p>
+<p>dengan mengganti variable <code class="docutils literal notranslate"><span class="pre">y</span></code> pada proses plot kedua dengan formula <code class="docutils literal notranslate"><span class="pre">y</span> <span class="pre">=</span> <span class="pre">mx</span> <span class="pre">+</span> <span class="pre">b</span></code>, variable <code class="docutils literal notranslate"><span class="pre">m</span></code> ditandakan dengan <strong>alpha</strong> variable index ke-0, dan <strong>alpha</strong> index ke-1.</p>
+<p>Selanjutnya kita bisa memanggil <code class="docutils literal notranslate"><span class="pre">plt.show()</span></code> untuk menampilkan hasil plotting.</p>
+<a class="reference internal image-reference" href="../../_images/result_least_square.png"><img alt="../../_images/result_least_square.png" src="../../_images/result_least_square.png" style="width: 300px;" /></a>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Newton-Polynomial-Interpolation.html" class="btn btn-neutral float-left" title="Newton Polynomial Interpolation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Cubic-Spline-Interpolation.html" class="btn btn-neutral float-right" title="Cubic Spline Interpolation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Graziella.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

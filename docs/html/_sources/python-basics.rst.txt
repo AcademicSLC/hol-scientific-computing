@@ -1,0 +1,10 @@
+.. toctree::
+   :maxdepth: 1
+   :caption: Session 1 - Python basics 
+
+   materials/session-1/python-basics
+   materials/session-1/python-numbers 
+   materials/session-1/strings 
+   materials/session-1/numpy-method
+   materials/session-1/casting 
+   materials/session-1/mini-practice

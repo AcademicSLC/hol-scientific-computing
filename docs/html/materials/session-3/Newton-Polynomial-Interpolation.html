@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Newton Polynomial Interpolation &mdash; Lumache 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/plot_directive.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Solving Problem dengan Menggunakan Persamaan Least Square Regression" href="Solving-Least-Square-Regression.html" />
+    <link rel="prev" title="Least Square Regression" href="Least-Square-Regression.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Lumache
+          </a>
+              <div class="version">
+                0.1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Session 1 - Python basics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/python-basics.html"><strong>Python Basics</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/python-numbers.html"><strong>Python Numbers</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/strings.html"><strong>String</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/numpy-method.html"><em>Numpy Method</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/casting.html"><strong>Casting</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/python-data-structure.html">Data structure di Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/mini-practice.html"><em>Mini Practice</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 2 - Gauss Seidel</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-2/gauss-seidel.html">System Linear Equation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-2/mini-practice.html"><em>Mini Practice</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 3 - Least Square Regression</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Interpolation.html">Interpolation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Least-Square-Regression.html">Least Square Regression</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Newton Polynomial Interpolation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Solving-Least-Square-Regression.html">Solving Problem dengan Menggunakan Persamaan Least Square Regression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cubic-Spline-Interpolation.html">Cubic Spline Interpolation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mini-excercise.html">Mini Excercise</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 4 - Root of equations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-4/Root-of-Equations.html">Root of Equations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-4/Bisection-Method.html">Bisection Method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-4/Newton-Raphson.html">Newton Raphson Method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-4/mini-excercise.html">Mini Excercise</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 5 - Riemann integral</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-5/Rieman-Integral.html">Riemans Integral</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-5/Trapezoid.html">Trapezoid</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-5/mini-exercise.html">Mini Excercise</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Lumache</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Newton Polynomial Interpolation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/materials/session-3/Newton-Polynomial-Interpolation.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="newton-polynomial-interpolation">
+<h1>Newton Polynomial Interpolation<a class="headerlink" href="#newton-polynomial-interpolation" title="Permalink to this heading"></a></h1>
+<p>Newton Polynomial Interpolation adalah sebuah cara yang digunakan untuk menentukan dan menyesuaikan</p>
+<p>titik dari sekumpulan data yang tersedia.</p>
+<p>Cara melakukan kalkulasi pada Newton Polynomial Interpolation adalah dengan mengkalikan variabel <code class="docutils literal notranslate"><span class="pre">a</span></code> dengan hasil kalkulasi <code class="docutils literal notranslate"><span class="pre">(x-x0)...(x-xn)</span></code>.</p>
+<p>Berikut adalah rumus yang digunakan untuk melakukan kalkulasi Newton Polynomial Interpolation.</p>
+<a class="reference internal image-reference" href="../../_images/newton_polynomial_interpolation_formula.png"><img alt="../../_images/newton_polynomial_interpolation_formula.png" src="../../_images/newton_polynomial_interpolation_formula.png" style="width: 300px;" /></a>
+<p>Yang berbeda dari Newton Polynomial Interpolation dengan jenis Interpolation lainnya adalah terdapat koefisien <code class="docutils literal notranslate"><span class="pre">a</span></code>,</p>
+<p>untuk koefisien <code class="docutils literal notranslate"><span class="pre">a</span></code> dimulai dari initial value dan akan berubah seiring bertambahnya suku persamaan yang ada.</p>
+<a class="reference internal image-reference" href="../../_images/inital_newton_polynomial.png"><img alt="../../_images/inital_newton_polynomial.png" src="../../_images/inital_newton_polynomial.png" style="width: 300px;" /></a>
+<p>nilai initial pada variabel koefisien <code class="docutils literal notranslate"><span class="pre">a0</span></code> adalah nilai <code class="docutils literal notranslate"><span class="pre">y0</span></code> atau disebut sebagai nilai initial variabel <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p>
+<p>Selanjutnya seiring bertambahnya suku persamaan, maka nilai koefisien <code class="docutils literal notranslate"><span class="pre">a</span></code> akan bertambah juga, yang dimulai dari <code class="docutils literal notranslate"><span class="pre">a0</span></code> hingga <code class="docutils literal notranslate"><span class="pre">a1...</span> <span class="pre">+</span> <span class="pre">a2</span> <span class="pre">+</span> <span class="pre">an</span></code>.</p>
+<p>Nilai variable <code class="docutils literal notranslate"><span class="pre">a</span></code> terbaru bisa didapat dari rumus berikut.</p>
+<a class="reference internal image-reference" href="../../_images/a1_newton_polynomial_interpolation.png"><img alt="../../_images/a1_newton_polynomial_interpolation.png" src="../../_images/a1_newton_polynomial_interpolation.png" style="width: 300px;" /></a>
+<p>dari rumus diatas bisa didapatkan bahwa nilai koefisien <code class="docutils literal notranslate"><span class="pre">a1</span></code> bisa didapatkan dari <code class="docutils literal notranslate"><span class="pre">(y1-y0)</span></code>, <code class="docutils literal notranslate"><span class="pre">y1</span></code> merupakan nilai y saat ini, dan <code class="docutils literal notranslate"><span class="pre">y0</span></code> adalah initial.</p>
+<p>Setelah berhasil kita dapatkan langkah selanjutnya adalah kita bagi antara <code class="docutils literal notranslate"><span class="pre">(y1-y0)</span></code> dibagi dengan <code class="docutils literal notranslate"><span class="pre">x1-x0</span></code>.</p>
+<a class="reference internal image-reference" href="../../_images/a2_newton_polynomial_interpolation.png"><img alt="../../_images/a2_newton_polynomial_interpolation.png" src="../../_images/a2_newton_polynomial_interpolation.png" style="width: 300px;" /></a>
+<p>Hal tersebut juga berlaku untuk increment koefisien pada <code class="docutils literal notranslate"><span class="pre">a2</span></code>.</p>
+<p>Untuk koefisien <code class="docutils literal notranslate"><span class="pre">a3</span></code> hingga <code class="docutils literal notranslate"><span class="pre">an</span></code>, memiliki struktur kalkulasi yang berbeda pada perhitungan koefisien <code class="docutils literal notranslate"><span class="pre">a</span></code>, yaitu sebagai berikut.</p>
+<a class="reference internal image-reference" href="../../_images/a3_newton_polynomial_interpolation.png"><img alt="../../_images/a3_newton_polynomial_interpolation.png" src="../../_images/a3_newton_polynomial_interpolation.png" style="width: 300px;" /></a>
+<p>Selanjutnya kita akan melakukan implementasi dari newton polynomial interpolation sebagai berikut.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+<p>Pertama-tama kita lakukan import library yang dibutuhkan untuk melakukan proses kalkulasi newton polynomial interpolation.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>Selanjutnya, kita siapkan data array yang kita panggil dengan menggunakan <code class="docutils literal notranslate"><span class="pre">np.array</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">divided_diff</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+    <span class="n">coef</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">([</span><span class="n">n</span><span class="p">,</span> <span class="n">n</span><span class="p">])</span>
+    <span class="n">coef</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">y</span>
+
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="n">j</span><span class="p">):</span>
+            <span class="n">coef</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> \
+        <span class="p">(</span><span class="n">coef</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">coef</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">/</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="n">j</span><span class="p">]</span><span class="o">-</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+
+    <span class="k">return</span> <span class="n">coef</span>
+</pre></div>
+</div>
+<p>Langkah pertama yang kita lakukan adalah menghitung panjang nilai <code class="docutils literal notranslate"><span class="pre">y</span></code> atau salah satu array lainnya.</p>
+<p>Selanjutnya setelah kita berhasil mendapatkan panjang <code class="docutils literal notranslate"><span class="pre">n</span></code> kita akan membuat suatu array 2d dengan bentuk <code class="docutils literal notranslate"><span class="pre">n*n</span></code> yang dinisialisasi dengan nilai 0.</p>
+<p>Selanjutnya kita masukkan nilai <code class="docutils literal notranslate"><span class="pre">y</span></code> untuk mengubah nilai kolom index ke-0 dengan nilai <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p>
+<p>Sehingga hasil dari <code class="docutils literal notranslate"><span class="pre">coef[:,</span> <span class="pre">0]</span> <span class="pre">=</span> <span class="pre">y</span></code> akan menjadi seperti gambar dibawah ini.</p>
+<a class="reference internal image-reference" href="../../_images/result_coef_calculate.png"><img alt="../../_images/result_coef_calculate.png" src="../../_images/result_coef_calculate.png" style="width: 300px;" /></a>
+<p>Selanjutnya kita akan melakukan kalkulasi untuk mendapatkan nilai koefisien dengan menggunakan teknik pembagian diferensiasi.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">newton_poly</span><span class="p">(</span><span class="n">coef</span><span class="p">,</span> <span class="n">x_data</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">x_data</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="n">coef</span><span class="p">[</span><span class="n">n</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">p</span> <span class="o">=</span> <span class="n">coef</span><span class="p">[</span><span class="n">n</span><span class="o">-</span><span class="n">k</span><span class="p">]</span> <span class="o">+</span> <span class="p">(</span><span class="n">x</span> <span class="o">-</span><span class="n">x_data</span><span class="p">[</span><span class="n">n</span><span class="o">-</span><span class="n">k</span><span class="p">])</span><span class="o">*</span><span class="n">p</span>
+    <span class="k">return</span> <span class="n">p</span>
+</pre></div>
+</div>
+<p>Selanjutnya kita dapat membuat suatu function dengan bernama <code class="docutils literal notranslate"><span class="pre">newton_poly</span></code> yang ditujukan untuk menghitung newton polynomial dengan menggunakan rumus</p>
+<p>yang sudah ditujukan dan dibuat dengan menggunakan rumus newton yaitu <code class="docutils literal notranslate"><span class="pre">a0</span> <span class="pre">+</span> <span class="pre">a1(x-x0)</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a_s</span> <span class="o">=</span> <span class="n">divided_diff</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:]</span>
+</pre></div>
+</div>
+<p>Selanjutnya kita dapat memanggil function <code class="docutils literal notranslate"><span class="pre">divided_diff</span></code> pada variable yang sudah kita siapkan, pembagian diferensiasi bisa didapatkan dari</p>
+<p><code class="docutils literal notranslate"><span class="pre">x</span></code> dan <code class="docutils literal notranslate"><span class="pre">y</span></code> array yang sudah diimplementasi dengan menggunakan <code class="docutils literal notranslate"><span class="pre">np.array</span></code>. yang dimana kita akan menggil pada <strong>row</strong> ke-0 dan seluruh kolom yang tersedia pada</p>
+<p>pada <strong>row</strong> ke-0.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x_new</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mf">2.1</span><span class="p">,</span> <span class="mf">.1</span><span class="p">)</span>
+<span class="n">y_new</span> <span class="o">=</span> <span class="n">newton_poly</span><span class="p">(</span><span class="n">a_s</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">x_new</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Selanjutnya kita dapat membuat suatu variable <strong>x_new</strong> yang berisikan array yang di-arange dari <code class="docutils literal notranslate"><span class="pre">-5</span></code> sampai <code class="docutils literal notranslate"><span class="pre">2.1</span></code> dengan</p>
+<p>step jarak sebanyak <code class="docutils literal notranslate"><span class="pre">0.1</span></code>.</p>
+<p>Setelah berhasil kita dapatkan nilai dari <code class="docutils literal notranslate"><span class="pre">x_new</span></code>, kita bisa melakukan kalkulasi newton polynomial dengan memanggil variable <code class="docutils literal notranslate"><span class="pre">newton_poly</span></code> dan ditampung pada variable <code class="docutils literal notranslate"><span class="pre">y_new</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;bo&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_new</span><span class="p">,</span> <span class="n">y_new</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Selanjutnya kita bisa melakukan plotting pada hasil perhitungan pembagian diferensiasi dan dimasukkan kedalam</p>
+<p>rumus newton polynomial interpolation untuk mendapatkan nilai interpolasi yang sesuai. Berikut adalah <strong>penjelasan lengkap</strong> dari <a class="reference external" href="https://pythonnumericalmethods.studentorg.berkeley.edu/notebooks/chapter17.05-Newtons-Polynomial-Interpolation.html">Newton Polynomial Interpolation</a>.</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Least-Square-Regression.html" class="btn btn-neutral float-left" title="Least Square Regression" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Solving-Least-Square-Regression.html" class="btn btn-neutral float-right" title="Solving Problem dengan Menggunakan Persamaan Least Square Regression" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Graziella.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

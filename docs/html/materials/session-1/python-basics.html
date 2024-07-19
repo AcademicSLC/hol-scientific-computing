@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Python Basics &mdash; Lumache 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/plot_directive.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Python Numbers" href="python-numbers.html" />
+    <link rel="prev" title="Welcome to Lumache’s documentation!" href="../../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Lumache
+          </a>
+              <div class="version">
+                0.1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Session 1 - Python basics</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><strong>Python Basics</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#apa-itu-python">Apa itu Python?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#output-pada-python">Output pada Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#input-pada-python">Input pada Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#comment-pada-python">Comment pada python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tipe-data-dan-variable-pada-python">Tipe data dan variable pada Python</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="python-numbers.html"><strong>Python Numbers</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="strings.html"><strong>String</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="numpy-method.html"><em>Numpy Method</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="casting.html"><strong>Casting</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="python-data-structure.html">Data structure di Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mini-practice.html"><em>Mini Practice</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 2 - Gauss Seidel</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-2/gauss-seidel.html">System Linear Equation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-2/mini-practice.html"><em>Mini Practice</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 3 - Least Square Regression</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/Least-Square-Regression.html">Least Square Regression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/Newton-Polynomial-Interpolation.html">Newton Polynomial Interpolation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/Solving-Least-Square-Regression.html">Solving Problem dengan Menggunakan Persamaan Least Square Regression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/Interpolation.html">Interpolation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/Cubic-Spline-Interpolation.html">Cubic Spline Interpolation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/mini-excercise.html">Mini Excercise</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 4 - Root of equations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-4/Root-of-Equations.html">Root of Equations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-4/Bisection-Method.html">Bisection Method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-4/Newton-Raphson.html">Newton Raphson Method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-4/mini-excercise.html">Mini Excercise</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 5 - Riemann integral</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-5/Rieman-Integral.html">Riemans Integral</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-5/Trapezoid.html">Trapezoid</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-5/mini-exercise.html">Mini Excercise</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Lumache</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><strong>Python Basics</strong></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/materials/session-1/python-basics.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="python-basics">
+<h1><strong>Python Basics</strong><a class="headerlink" href="#python-basics" title="Permalink to this heading"></a></h1>
+<section id="apa-itu-python">
+<h2>Apa itu Python?<a class="headerlink" href="#apa-itu-python" title="Permalink to this heading"></a></h2>
+<p>Python adalah bahasa pemrograman yang dibuat oleh Guido van Rossum dan diperkenalkan pada tahun 1991.</p>
+<dl class="simple">
+<dt>Banyak manfaat yang bisa didapatkan dari pembuatan aplikasi dengan menggunakan python:</dt><dd><ul class="simple">
+<li><p>Membuat web server</p></li>
+<li><p>Membuat model Artificial Intelligence (Machine Learning, Deep Learning, Natural Language Processing dan lainnya).</p></li>
+<li><p>Backend development</p></li>
+<li><p>Membuat data visualisasi</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="output-pada-python">
+<h2>Output pada Python<a class="headerlink" href="#output-pada-python" title="Permalink to this heading"></a></h2>
+<p>Untuk melakukan output pada python bisa menggunakan  keyword <code class="docutils literal notranslate"><span class="pre">print()</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello world&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="input-pada-python">
+<h2>Input pada Python<a class="headerlink" href="#input-pada-python" title="Permalink to this heading"></a></h2>
+<p>Untuk melakukan input pada python bisa menggunakan keyword <code class="docutils literal notranslate"><span class="pre">input()</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span> <span class="o">//</span> <span class="n">data</span> <span class="n">yag</span> <span class="n">dimasukkan</span><span class="p">:</span> <span class="n">Budi</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="comment-pada-python">
+<h2>Comment pada python<a class="headerlink" href="#comment-pada-python" title="Permalink to this heading"></a></h2>
+<p>Comment adalah sebuah syntax yang tidak akan di eksekusi ketika program di eksekusi, syntax comment pada Python adalah <code class="docutils literal notranslate"><span class="pre">#</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Artificial Intelligence</span>
+</pre></div>
+</div>
+</section>
+<section id="tipe-data-dan-variable-pada-python">
+<h2>Tipe data dan variable pada Python<a class="headerlink" href="#tipe-data-dan-variable-pada-python" title="Permalink to this heading"></a></h2>
+<p>Tipe data adalah suatu value yang merepresentasikan nilai dari suatu data.</p>
+<dl class="simple">
+<dt>Macam-macam tipe data pada python adalah sebagai berikut:</dt><dd><ul class="simple">
+<li><p>int</p></li>
+<li><p>float</p></li>
+<li><p>string</p></li>
+<li><p>boolean</p></li>
+</ul>
+</dd>
+</dl>
+<p><strong>Variable</strong></p>
+<p>Variable adalah suatu tempat yang dapat digunakan untuk menampung data pada Python.</p>
+<p>Penerapan variable sebagai berikut:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>x = &quot;Ahmad&quot; // `x` sebagai variable dan &quot;Ahmad&quot; sebgai nilai string
+print(x)
+</pre></div>
+</div>
+<p><strong>Casting</strong>
+Casting adalah proses convert nilai data pada Python yang digunakan untuk convert dari suatu tipe data ke tipe data lainnya.</p>
+<p>Penerapan <em>casting</em> akan saya contohkan sebagai berikut.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">number</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">//</span> <span class="n">variable</span> <span class="n">number</span> <span class="n">menampung</span> <span class="nb">int</span>
+<span class="n">number_str</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">number</span><span class="p">)</span> <span class="o">//</span> <span class="n">convert</span> <span class="n">nilai</span> <span class="nb">int</span> <span class="n">menjadi</span> <span class="n">string</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">number_str</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Get type of value</strong>
+Dalam python terdapat <em>build-in</em> function yang digunakan untuk mendapatkan data</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../../index.html" class="btn btn-neutral float-left" title="Welcome to Lumache’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="python-numbers.html" class="btn btn-neutral float-right" title="Python Numbers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Graziella.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
