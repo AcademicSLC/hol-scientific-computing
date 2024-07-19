@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>System Linear Equation &mdash; Lumache 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/plot_directive.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Mini Practice" href="mini-practice.html" />
+    <link rel="prev" title="Mini Practice" href="../session-1/mini-practice.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Lumache
+          </a>
+              <div class="version">
+                0.1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Session 1 - Python basics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/python-basics.html"><strong>Python Basics</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/python-numbers.html"><strong>Python Numbers</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/strings.html"><strong>String</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/numpy-method.html"><em>Numpy Method</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/casting.html"><strong>Casting</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/python-data-structure.html">Data structure di Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/mini-practice.html"><em>Mini Practice</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 2 - Gauss Seidel</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">System Linear Equation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#gauss-seidel-linear-equation"><em>Gauss Seidel Linear Equation</em></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mini-practice.html"><em>Mini Practice</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 3 - Least Square Regression</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/Interpolation.html">Interpolation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/Least-Square-Regression.html">Least Square Regression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/Newton-Polynomial-Interpolation.html">Newton Polynomial Interpolation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/Solving-Least-Square-Regression.html">Solving Problem dengan Menggunakan Persamaan Least Square Regression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/Cubic-Spline-Interpolation.html">Cubic Spline Interpolation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/mini-excercise.html">Mini Excercise</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 4 - Root of equations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-4/Root-of-Equations.html">Root of Equations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-4/Bisection-Method.html">Bisection Method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-4/Newton-Raphson.html">Newton Raphson Method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-4/mini-excercise.html">Mini Excercise</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 5 - Riemann integral</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-5/Rieman-Integral.html">Riemans Integral</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-5/Trapezoid.html">Trapezoid</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-5/mini-exercise.html">Mini Excercise</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Lumache</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">System Linear Equation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/materials/session-2/gauss-seidel.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="system-linear-equation">
+<h1>System Linear Equation<a class="headerlink" href="#system-linear-equation" title="Permalink to this heading"></a></h1>
+<p><em>System Linear Equation</em> adalah proses <strong>kalkukalasi</strong> dua atau lebih <strong>suatu persamaan linear</strong> untuk mendapatkan nilai dari suatu variabel.</p>
+<p>Terdapat berbagai cara untuk menyelesaikan <em>System Linear Equation</em>, akan tetapi pada mata kuliah Scientific Computing kalkulasi <em>System Linear Equation</em> yang dipelajari adalah <em>Gauss Seidel Linear Equation</em>.</p>
+<section id="gauss-seidel-linear-equation">
+<h2><em>Gauss Seidel Linear Equation</em><a class="headerlink" href="#gauss-seidel-linear-equation" title="Permalink to this heading"></a></h2>
+<p><em>Gauss Seidel method</em> adalah proses <strong>kalkulasi persamaan linear</strong> yang menggunakan <strong>iterative method</strong>. Dengan menggunakan <em>Gauss Seidel Method</em> kita akan melakukan prediksi kalkulasi suatu nilai variable <code class="docutils literal notranslate"><span class="pre">x</span></code> yang dimana nilai akhir yang benar adalah ketika nilai <code class="docutils literal notranslate"><span class="pre">x</span></code> lebih kecil dari <em>threshold</em>.</p>
+<p>Berikut adalah contoh dari penerapan <em>Gauss Seidel</em> dengan contoh penerapan persaamaan linear yang akan digunakan.</p>
+<p>Contoh persamaan:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}14x^1 + 1x^2 + 1x^3 = 6\\3x^1 + 12x^2 + 3x^3 = 5\\7x^1 + 3x^2 + 13x^3 = 3\end{aligned}\end{align} \]</div>
+<p>Proses penyelesaian persamaan linear dengan menggunakan <em>Gauss Seidel Method</em>.</p>
+<p>Pertama-tama lakukanlah pengecekan apakah persamaan linear merupakan <em>Diagonally Dominant</em>. Sebelum kita melakukan pengecekan <em>Diagonally dominant</em> kita harus menyiapkan <strong>matrix</strong> angka terlebih dahulu.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Xs</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">[</span>
+        <span class="p">[</span><span class="mi">14</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">13</span><span class="p">]</span>
+    <span class="p">]</span>
+<span class="p">]</span>
+
+<span class="n">Ys</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">[</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>Setelah menyiapkan <strong>matrix</strong> angka, selanjutnya adalah kita membuat suatu <strong>function</strong> yang bernama <strong>isDiagonallyDominant</strong>, function ini dibuat untuk melakukan pengecekan apakah data <strong>matrix</strong> yang disiapkan sudah memiliki data yang <strong>diagonally dominant</strong>.</p>
+<p>Di proses ini, kita akan menggunakan <strong>function</strong> <code class="docutils literal notranslate"><span class="pre">np.diag</span></code> yang dimana function ini bertujuan untuk mendapatkan nilai <strong>diagonal</strong> dari data matrix yang diberikan. Setelah berhasil mendapatkan nilai <strong>diagonal</strong> dari function tersebut, selanjutnya kita akan melakukan kalkulasi untuk mendapatkan nilai dari <code class="docutils literal notranslate"><span class="pre">off_diag</span></code> yang menunjukan berapa nilai angka selain dari <code class="docutils literal notranslate"><span class="pre">diag</span></code> tersebut.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">isDiagonallyDominant</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="n">diag</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;diag: </span><span class="si">{</span><span class="n">diag</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">off_diag</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="n">diag</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">off_diag</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">diag</span> <span class="o">&gt;</span> <span class="n">off_diag</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">False</span>
+</pre></div>
+</div>
+<p>Selanjut nya setelah function <em>isDiagonallyDominant</em> dibuat, buatlah function <em>Gauss Seidel</em> untuk melakukan proses validasi antara persamaan linear dengan epsilon.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">gauss_seidel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">max_iter</span><span class="p">,</span> <span class="n">eps</span><span class="p">):</span>
+
+    <span class="c1"># parse ke array</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+
+    <span class="n">init_val</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">x</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
+
+    <span class="n">diag</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="o">-</span><span class="n">x</span>
+    <span class="n">np</span><span class="o">.</span><span class="n">fill_diagonal</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">max_iter</span><span class="p">):</span>
+        <span class="n">new_val</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">init_val</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+        <span class="n">new_val</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">y</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="n">new_val</span><span class="p">))</span><span class="o">/</span><span class="n">diag</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+
+        <span class="n">ec</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">new_val</span><span class="o">-</span><span class="n">init_val</span><span class="p">,</span> <span class="n">new_val</span><span class="o">-</span><span class="n">init_val</span><span class="p">))</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Iter </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">new_val</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">ec</span> <span class="o">&lt;</span> <span class="n">eps</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">True</span>
+
+        <span class="n">init_val</span> <span class="o">=</span> <span class="n">new_val</span>
+
+    <span class="k">return</span> <span class="kc">False</span>
+</pre></div>
+</div>
+<p>Pada function <em>Gauss Seidel</em> dilakukan iterasi untuk mendapatkan nilai <em>eucledian distance</em> yang lebih kecil dari epsilon. Selanjutnya  kita buat variable <code class="docutils literal notranslate"><span class="pre">init_val</span></code> yang diisikan dengan <code class="docutils literal notranslate"><span class="pre">np,zeros</span></code> sebanyak size yang dimiliki oleh matrix <code class="docutils literal notranslate"><span class="pre">x</span></code>. Kita isikan nilai <code class="docutils literal notranslate"><span class="pre">init_val</span></code> dengan nilai <em>zeros</em>.</p>
+<p>Setelah itu, kita ambil diagonal dari <code class="docutils literal notranslate"><span class="pre">x</span></code> dengan menggunakan <code class="docutils literal notranslate"><span class="pre">np.diag</span></code>. kemudian pada code <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">-x</span></code> kita pindah ruas x dari kiri ke kanan. Selanjutnya diagonal pada <code class="docutils literal notranslate"><span class="pre">x</span></code> kita rubah menjadi 0 dengan menggunakan <code class="docutils literal notranslate"><span class="pre">np.fill_diagonal()</span></code>. Yang kemudian kita akan melakukan iterasi pada persamaan Linear</p>
+<p>yang sudah diberikan untuk mendapatkan eucledian distance yang akan digunakan untuk melakukan validasi apakah persamaan linear atau matrix tersebut <em>konvergen</em> atau tidak. Yang dimana nilai matrix akan divalidasi dengan nilai epsilon atau thresehold.</p>
+<p>Selanjutnya kita akan melakukan print data pada persamaan matrix yang sudah dibuat.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">Xs</span><span class="p">,</span> <span class="n">Ys</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="n">check_diag_dominant</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">x</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">gauss_seidel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Converged!&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Not Converged&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Terakhir, kita akan melakukan iterasi pada matrix dengan menggunakan <code class="docutils literal notranslate"><span class="pre">zip()</span></code> untuk menggabungkan dua array dan menjabarkan nya pada variable <code class="docutils literal notranslate"><span class="pre">(x,</span> <span class="pre">y)</span></code> dan mengeceknya apakah matrix yang kita miliki adalah diagonal dominant yang akan return <strong>True</strong> atau <strong>False</strong>.</p>
+<p>Dibawah ini merupakan <em>full code</em> dari implementasi proses <em>kalkulasi</em> <strong>Gauss Seidel</strong> yang diberikan.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># mempersiapkan dataset</span>
+<span class="n">Xs</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">[</span>
+        <span class="p">[</span><span class="mi">14</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">13</span><span class="p">]</span>
+    <span class="p">]</span>
+<span class="p">]</span>
+
+<span class="n">Ys</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">[</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="p">]</span>
+
+<span class="c1"># melakukan pengecekan gauss seidel diagonal dominant</span>
+<span class="k">def</span> <span class="nf">isDiagonallyDominant</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="n">diag</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;diag: </span><span class="si">{</span><span class="n">diag</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">off_diag</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="n">diag</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">off_diag</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">diag</span> <span class="o">&gt;</span> <span class="n">off_diag</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">False</span>
+
+<span class="c1"># melakukan kalkulasi gauss seidel</span>
+ <span class="k">def</span> <span class="nf">gauss_seidel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">max_iter</span><span class="p">,</span> <span class="n">eps</span><span class="p">):</span>
+
+    <span class="c1"># parse ke array</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+
+    <span class="n">init_val</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">x</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
+
+    <span class="n">diag</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="o">-</span><span class="n">x</span>
+    <span class="n">np</span><span class="o">.</span><span class="n">fill_diagonal</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">max_iter</span><span class="p">):</span>
+        <span class="n">new_val</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">init_val</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+        <span class="n">new_val</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">y</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="n">new_val</span><span class="p">))</span><span class="o">/</span><span class="n">diag</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+
+        <span class="n">ec</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">new_val</span><span class="o">-</span><span class="n">init_val</span><span class="p">,</span> <span class="n">new_val</span><span class="o">-</span><span class="n">init_val</span><span class="p">))</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Iter </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">new_val</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">ec</span> <span class="o">&lt;</span> <span class="n">eps</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">True</span>
+
+        <span class="n">init_val</span> <span class="o">=</span> <span class="n">new_val</span>
+
+    <span class="k">return</span> <span class="kc">False</span>
+
+<span class="c1"># melakukan looping dengan menggunakan zip untuk mendapatkan setiap data yang digunakan pada matrix</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">Xs</span><span class="p">,</span> <span class="n">Ys</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="n">check_diag_dominant</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">x</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">gauss_seidel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Converged!&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Not Converged&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Berikut adalah <strong>link referensi</strong> yang digunakan untuk <a class="reference external" href="https://pythonnumericalmethods.studentorg.berkeley.edu/notebooks/chapter14.04-Solutions-to-Systems-of-Linear-Equations.html">Gauss Seidel</a>.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../session-1/mini-practice.html" class="btn btn-neutral float-left" title="Mini Practice" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="mini-practice.html" class="btn btn-neutral float-right" title="Mini Practice" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Graziella.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

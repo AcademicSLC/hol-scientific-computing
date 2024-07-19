@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bisection Method &mdash; Lumache 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/plot_directive.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Newton Raphson Method" href="Newton-Raphson.html" />
+    <link rel="prev" title="Root of Equations" href="Root-of-Equations.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Lumache
+          </a>
+              <div class="version">
+                0.1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Session 1 - Python basics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/python-basics.html"><strong>Python Basics</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/python-numbers.html"><strong>Python Numbers</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/strings.html"><strong>String</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/numpy-method.html"><em>Numpy Method</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/casting.html"><strong>Casting</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/python-data-structure.html">Data structure di Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/mini-practice.html"><em>Mini Practice</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 2 - Gauss Seidel</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-2/gauss-seidel.html">System Linear Equation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-2/mini-practice.html"><em>Mini Practice</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 3 - Least Square Regression</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/Interpolation.html">Interpolation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/Least-Square-Regression.html">Least Square Regression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/Newton-Polynomial-Interpolation.html">Newton Polynomial Interpolation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/Solving-Least-Square-Regression.html">Solving Problem dengan Menggunakan Persamaan Least Square Regression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/Cubic-Spline-Interpolation.html">Cubic Spline Interpolation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/mini-excercise.html">Mini Excercise</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 4 - Root of equations</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Root-of-Equations.html">Root of Equations</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Bisection Method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Newton-Raphson.html">Newton Raphson Method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mini-excercise.html">Mini Excercise</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 5 - Riemann integral</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-5/Rieman-Integral.html">Riemans Integral</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-5/Trapezoid.html">Trapezoid</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-5/mini-exercise.html">Mini Excercise</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Lumache</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Bisection Method</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/materials/session-4/Bisection-Method.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="bisection-method">
+<h1>Bisection Method<a class="headerlink" href="#bisection-method" title="Permalink to this heading"></a></h1>
+<p>Bisection method adalah sebuah teknik untuk menentukan root pada suatu persamaan yang memiliki interval.</p>
+<p>setelah itu ketika kita sudah memiliki interval suatu persamaan matematika, kita dapat memilih 2 titik untuk menentukan</p>
+<p>titik <code class="docutils literal notranslate"><span class="pre">a</span></code> dan titik <code class="docutils literal notranslate"><span class="pre">b</span></code> pada persamaan yang ada.</p>
+<p>Pada pemilihan titik <code class="docutils literal notranslate"><span class="pre">a</span></code> dan <code class="docutils literal notranslate"><span class="pre">b</span></code> diahruskan data yang scalar dan memiliki suatu kondisi bahwa <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">&lt;</span> <span class="pre">b</span></code>.</p>
+<p>Kemudian kita bisa menentukan titik gradien atau nilai tengah pada <code class="docutils literal notranslate"><span class="pre">a</span></code> dan <code class="docutils literal notranslate"><span class="pre">b</span></code> dengan menggunakan rumus <code class="docutils literal notranslate"><span class="pre">m</span> <span class="pre">=</span> <span class="pre">a</span> <span class="pre">+</span> <span class="pre">b</span> <span class="pre">/</span> <span class="pre">2</span></code></p>
+<p>dari hasil kalkulasi nilai pada variable <code class="docutils literal notranslate"><span class="pre">m</span></code> kita akan menentukan apakah dia root tidak, nilai variable <code class="docutils literal notranslate"><span class="pre">m</span></code> akan <strong>root</strong> jika</p>
+<p>nilai <a href="#id1"><span class="problematic" id="id2">``</span></a>f(m) = 0 `` atau mendekati 0.</p>
+<p>Jika nilai dari <code class="docutils literal notranslate"><span class="pre">f(m)</span> <span class="pre">&gt;</span> <span class="pre">0</span></code> maka kita akan merubah interval yang sebelumnya dimulai dari <code class="docutils literal notranslate"><span class="pre">a</span></code> ke <code class="docutils literal notranslate"><span class="pre">b</span></code>,</p>
+<p>maka interval akan berubah menjadi <code class="docutils literal notranslate"><span class="pre">(m,b)</span></code> atau dari nilai <code class="docutils literal notranslate"><span class="pre">m</span></code> ke nilai <code class="docutils literal notranslate"><span class="pre">b</span></code>.</p>
+<p>Dan jika nilai dari <code class="docutils literal notranslate"><span class="pre">f(m)</span> <span class="pre">&lt;</span> <span class="pre">0</span></code> maka kita akan merubah intervalnya menjadi <code class="docutils literal notranslate"><span class="pre">(a,m)</span></code>.</p>
+<p>berikut adalah contoh gambaran dari grafik yang menggambarkan proses bisection.</p>
+<a class="reference internal image-reference" href="../../_images/Bisection-method-graphic.png"><img alt="../../_images/Bisection-method-graphic.png" src="../../_images/Bisection-method-graphic.png" style="width: 300px;" /></a>
+<p>Setelah itu kita akan masuk ke dalam code untuk menentukan suatu Bisection method pada persamaan yang diberikan.</p>
+<p>Pertama-tama yang dapat kita lakukan adalah import library yang dibutuhkan.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</pre></div>
+</div>
+<p>Kemudian kita akan menyiapkan suatu persamaan yaitu <code class="docutils literal notranslate"><span class="pre">x^2</span> <span class="pre">-</span> <span class="pre">2</span> <span class="pre">=</span> <span class="pre">0</span></code> untuk mennentukan nilai root dari suatu persamaan.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">2</span>
+</pre></div>
+</div>
+<p>Pada code diatas didapatkan bahwa kita mempersiapkan suatu function yang berisikan persamaan yang sudah kita tentukan</p>
+<p>yaitu <code class="docutils literal notranslate"><span class="pre">x^2</span> <span class="pre">-</span> <span class="pre">2</span></code>. Selanjutnya kita akan membuat suatu function bernama <code class="docutils literal notranslate"><span class="pre">bisection</span></code> untuk menentukan suatu</p>
+<p>root dengan menggunakan Bisection Method.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">bisection</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span> <span class="n">tol</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">sign</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">a</span><span class="p">))</span> <span class="o">==</span> <span class="n">np</span><span class="o">.</span><span class="n">sign</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">b</span><span class="p">)):</span>
+        <span class="k">return</span>
+
+    <span class="n">m</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+
+    <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">m</span><span class="p">))</span> <span class="o">&lt;</span> <span class="n">tol</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">m</span>
+    <span class="k">elif</span> <span class="n">np</span><span class="o">.</span><span class="n">sign</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">a</span><span class="p">))</span> <span class="o">==</span> <span class="n">np</span><span class="o">.</span><span class="n">sign</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">m</span><span class="p">)):</span>
+        <span class="k">return</span> <span class="n">bisection</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">tol</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">np</span><span class="o">.</span><span class="n">sign</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">m</span><span class="p">))</span> <span class="o">==</span> <span class="n">np</span><span class="o">.</span><span class="n">sign</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">b</span><span class="p">)):</span>
+        <span class="k">return</span> <span class="n">bisection</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">tol</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Pada kode diatas sebelum kita melakukan pencarian root dengan menggunakan bisection method,</p>
+<p>kita harus menentukan apakah variable <code class="docutils literal notranslate"><span class="pre">a</span></code> dan variable <code class="docutils literal notranslate"><span class="pre">b</span></code> yang dimasukkan adalah memiliki nilai yang sama.</p>
+<p>jika kedua variable memiliki nilai yang sama, maka kita tidak bisa melakukan pencarian root dengan menggunakn bisection.</p>
+<p>Setelah kita bisa memastikan bahwa nilai <code class="docutils literal notranslate"><span class="pre">a</span></code> dan <code class="docutils literal notranslate"><span class="pre">b</span></code> tidak sama, maka kita akan melakukan mencari nilai tengah dari</p>
+<p>variable <code class="docutils literal notranslate"><span class="pre">a</span></code> dan <code class="docutils literal notranslate"><span class="pre">b</span></code> untuk memastikan bahwa kita bisa mendapatkan nilai tengah dari kedua variable tersebut.</p>
+<p>kemudian hasil dari kalkulasi nilai tengah antara <code class="docutils literal notranslate"><span class="pre">a</span></code> dan <code class="docutils literal notranslate"><span class="pre">b</span></code> yang ditampung pada variable <code class="docutils literal notranslate"><span class="pre">m</span></code>, kita masukkan nilai <code class="docutils literal notranslate"><span class="pre">m</span></code></p>
+<p>ke persamaan <code class="docutils literal notranslate"><span class="pre">f</span></code>. jika setelah kita absolute nilai dari <code class="docutils literal notranslate"><span class="pre">f(m)</span></code> lebih kecil dari nilai tolerance dan ternyata benar, maka kita return nilai <code class="docutils literal notranslate"><span class="pre">m</span></code>.</p>
+<p>Dan jika tidak, maka kita validasi apakah nilai <code class="docutils literal notranslate"><span class="pre">f(a)</span></code> dan nilai <code class="docutils literal notranslate"><span class="pre">f(m)</span></code> memiliki nilai yang sama. Jika iya maka akan kita return function <strong>bisection</strong></p>
+<p>dengan range interval <code class="docutils literal notranslate"><span class="pre">[a,m]</span></code> begitupula sebaliknya.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">r1</span> <span class="o">=</span> <span class="n">bisection</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">r1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Selanjutnya kita panggil function bisection yang kita tampung pada variable <code class="docutils literal notranslate"><span class="pre">r1</span></code>.</p>
+<p>variable <code class="docutils literal notranslate"><span class="pre">r1</span></code> merupakan nilai root dari persamaan <code class="docutils literal notranslate"><span class="pre">f</span></code> dengan pendekatan bisection.</p>
+<p>Dibawah ini, merupakan <strong>full code</strong> implementasi dari <strong>bisection method</strong>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># import library numpy</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># membuat function persaamaan</span>
+<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">2</span>
+
+<span class="c1"># membuat function untuk solving persamaan dengan bisection</span>
+<span class="k">def</span> <span class="nf">bisection</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span> <span class="n">tol</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">sign</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">a</span><span class="p">))</span> <span class="o">==</span> <span class="n">np</span><span class="o">.</span><span class="n">sign</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">b</span><span class="p">)):</span>
+        <span class="k">return</span>
+
+    <span class="n">m</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+
+    <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">m</span><span class="p">))</span> <span class="o">&lt;</span> <span class="n">tol</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">m</span>
+    <span class="k">elif</span> <span class="n">np</span><span class="o">.</span><span class="n">sign</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">a</span><span class="p">))</span> <span class="o">==</span> <span class="n">np</span><span class="o">.</span><span class="n">sign</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">m</span><span class="p">)):</span>
+        <span class="k">return</span> <span class="n">bisection</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">tol</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">np</span><span class="o">.</span><span class="n">sign</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">m</span><span class="p">))</span> <span class="o">==</span> <span class="n">np</span><span class="o">.</span><span class="n">sign</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">b</span><span class="p">)):</span>
+        <span class="k">return</span> <span class="n">bisection</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">tol</span><span class="p">)</span>
+
+<span class="c1"># selanjutnya tinggal implementasi bisection</span>
+<span class="n">r1</span> <span class="o">=</span> <span class="n">bisection</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">r1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Berikut adalah <strong>penjelasan lengkap</strong> dari <a class="reference external" href="https://pythonnumericalmethods.studentorg.berkeley.edu/notebooks/chapter19.03-Bisection-Method.html">Bisection</a>.</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Root-of-Equations.html" class="btn btn-neutral float-left" title="Root of Equations" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Newton-Raphson.html" class="btn btn-neutral float-right" title="Newton Raphson Method" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Graziella.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

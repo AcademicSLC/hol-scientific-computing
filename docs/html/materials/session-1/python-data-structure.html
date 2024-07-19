@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data structure di Python &mdash; Lumache 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/plot_directive.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Mini Practice" href="mini-practice.html" />
+    <link rel="prev" title="Casting" href="casting.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Lumache
+          </a>
+              <div class="version">
+                0.1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Session 1 - Python basics</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="python-basics.html"><strong>Python Basics</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="python-numbers.html"><strong>Python Numbers</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="strings.html"><strong>String</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="numpy-method.html"><em>Numpy Method</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="casting.html"><strong>Casting</strong></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Data structure di Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mini-practice.html"><em>Mini Practice</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 2 - Gauss Seidel</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-2/gauss-seidel.html">System Linear Equation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-2/mini-practice.html"><em>Mini Practice</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 3 - Least Square Regression</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/Least-Square-Regression.html">Least Square Regression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/Newton-Polynomial-Interpolation.html">Newton Polynomial Interpolation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/Solving-Least-Square-Regression.html">Solving Problem dengan Menggunakan Persamaan Least Square Regression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/Interpolation.html">Interpolation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/Cubic-Spline-Interpolation.html">Cubic Spline Interpolation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/mini-excercise.html">Mini Excercise</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 4 - Root of equations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-4/Root-of-Equations.html">Root of Equations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-4/Bisection-Method.html">Bisection Method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-4/Newton-Raphson.html">Newton Raphson Method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-4/mini-excercise.html">Mini Excercise</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 5 - Riemann integral</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-5/Rieman-Integral.html">Riemans Integral</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-5/Trapezoid.html">Trapezoid</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-5/mini-exercise.html">Mini Excercise</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Lumache</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Data structure di Python</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/materials/session-1/python-data-structure.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="data-structure-di-python">
+<h1>Data structure di Python<a class="headerlink" href="#data-structure-di-python" title="Permalink to this heading"></a></h1>
+<p>Python memiliki beberapa <strong>struktur data</strong> yang bersifat <cite>built-in function</cite>, <strong>struktur data</strong> tersebut dapat digunakan untuk menampung berbagai macam data</p>
+<p>berdasarkan jumlah memori yang digunakan untuk menampung berbagai macam data tersebut. <cite>Jenis-jenis</cite> <strong>struktur data</strong> yang terdapat pada <strong>python</strong> antara lain</p>
+<p><cite>list</cite>, <cite>set</cite>, <cite>tuple</cite> dan <cite>dictionary</cite>. Ke-empat <strong>struktur data</strong> tersebut adalah yang cukup sering digunakan, berikut adalah penjelasan dari <strong>struktur data</strong> tersebut.</p>
+<ul class="simple">
+<li><p><strong>list</strong></p></li>
+</ul>
+<p><strong>List</strong> adalah <strong>struktur data</strong> yang digunakan untuk menyimpan urutan elemen. List bersifat dinamis, artinya Anda dapat menambahkan, menghapus, dan memodifikasi elemen di dalamnya. List juga bersifat terurut dan memungkinkan duplikasi elemen.</p>
+<p>contoh implementasi dari <strong>list</strong> sebagai berikut:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Membuat sebuah list</span>
+<span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+
+<span class="c1"># Menambahkan elemen</span>
+<span class="n">my_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+
+<span class="c1"># Mengakses elemen</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># Output: 1</span>
+
+<span class="c1"># Mengubah elemen</span>
+<span class="n">my_list</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>
+
+<span class="c1"># Menghapus elemen</span>
+<span class="k">del</span> <span class="n">my_list</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>  <span class="c1"># Output: [1, 10, 4, 5, 6]</span>
+</pre></div>
+</div>
+<p>Dari implementasi kode <strong>list</strong> diatas akan menghasilkan output sebagai berikut.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">[1, 10, 4, 5, 6]</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>set</strong></p></li>
+</ul>
+<p><strong>Struktur data</strong> selanjutnya adalah <strong>set</strong>, <code class="docutils literal notranslate"><span class="pre">Set</span></code> adalah <strong>struktur data</strong> yang digunakan untuk menyimpan koleksi elemen unik yang tidak terurut. <code class="docutils literal notranslate"><span class="pre">Set</span></code> tidak memungkinkan duplikasi elemen dan tidak mendukung pengindeksan seperti <code class="docutils literal notranslate"><span class="pre">list</span></code>.</p>
+<p>Berikut adalah contoh implementasi dari <code class="docutils literal notranslate"><span class="pre">set</span></code> <strong>struktur data</strong>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Membuat sebuah set</span>
+<span class="n">my_set</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
+
+<span class="c1"># Menambahkan elemen</span>
+<span class="n">my_set</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+
+<span class="c1"># Menghapus elemen</span>
+<span class="n">my_set</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="c1"># Mengecek keberadaan elemen</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">4</span> <span class="ow">in</span> <span class="n">my_set</span><span class="p">)</span>  <span class="c1"># Output: True</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">my_set</span><span class="p">)</span>  <span class="c1"># Output: {1, 2, 4, 5, 6}</span>
+</pre></div>
+</div>
+<p>Hasil output dari dari implementasi <strong>struktur data</strong> diatas adalah sebagai berikut.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">{1, 2, 4, 5, 6}</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>Dictionary</strong></p></li>
+</ul>
+<p><strong>Dictionary</strong> adalah <strong>struktur data</strong> yang digunakan untuk menyimpan pasangan <em>key-value</em>. <strong>Dictionary</strong> bersifat tidak terurut sampai Python 3.7 (di mana mulai dari versi ini, dict mempertahankan urutan berdasarkan saat elemen dimasukkan). Kunci harus bersifat unik dan tidak dapat diubah (immutable), seperti <strong>string</strong> atau <strong>angka</strong>.</p>
+<p>Berikut adalah implementasi dari <strong>struktur data</strong> <code class="docutils literal notranslate"><span class="pre">set</span></code> pada python.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Membuat sebuah dictionary</span>
+<span class="n">my_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span> <span class="s2">&quot;city&quot;</span><span class="p">:</span> <span class="s2">&quot;New York&quot;</span><span class="p">}</span>
+
+<span class="c1"># Menambahkan pasangan key-value</span>
+<span class="n">my_dict</span><span class="p">[</span><span class="s2">&quot;email&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;alice@example.com&quot;</span>
+
+<span class="c1"># Mengakses nilai berdasarkan kunci</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_dict</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">])</span>  <span class="c1"># Output: Alice</span>
+
+<span class="c1"># Mengubah nilai</span>
+<span class="n">my_dict</span><span class="p">[</span><span class="s2">&quot;age&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">26</span>
+
+<span class="c1"># Menghapus pasangan key-value</span>
+<span class="k">del</span> <span class="n">my_dict</span><span class="p">[</span><span class="s2">&quot;city&quot;</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">my_dict</span><span class="p">)</span>  <span class="c1"># Output: {&#39;name&#39;: &#39;Alice&#39;, &#39;age&#39;: 26, &#39;email&#39;: &#39;alice@example.com&#39;}</span>
+</pre></div>
+</div>
+<p>Berikut adalah hasil <strong>output</strong> yang diberikan dari implementasi kode diatas.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Alice</span>
+<span class="go">{&#39;name&#39;: &#39;Alice&#39;, &#39;age&#39;: 26, &#39;email&#39;: &#39;alice@example.com&#39;}</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>Tuple</strong></p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">Tuple</span></code> adalah <strong>struktur data</strong> yang mirip dengan list, tetapi bersifat tidak dapat diubah (immutable). Setelah sebuah <code class="docutils literal notranslate"><span class="pre">tuple</span></code> dibuat, Anda <strong>tidak dapat</strong> mengubah, menambahkan, atau menghapus elemen di dalamnya. <strong>Tuple</strong> biasanya digunakan untuk <strong>menyimpan data yang tidak boleh berubah</strong>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Membuat sebuah tuple</span>
+<span class="n">my_tuple</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+
+<span class="c1"># Mengakses elemen</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_tuple</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># Output: 1</span>
+
+<span class="c1"># Tuple tidak dapat diubah, jadi operasi seperti berikut tidak diizinkan:</span>
+<span class="c1"># my_tuple[1] = 10  # Ini akan menghasilkan TypeError</span>
+
+<span class="c1"># Namun, Anda dapat melakukan operasi seperti penggabungan</span>
+<span class="n">new_tuple</span> <span class="o">=</span> <span class="n">my_tuple</span> <span class="o">+</span> <span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">new_tuple</span><span class="p">)</span>  <span class="c1"># Output: (1, 2, 3, 4, 5, 6, 7, 8)</span>
+</pre></div>
+</div>
+<p>Maka hasil dari <strong>output</strong> diatas adalah sebagai berikut.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">1</span>
+<span class="gp gp-VirtualEnv">(1, 2, 3, 4, 5, 6, 7, 8)</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="casting.html" class="btn btn-neutral float-left" title="Casting" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="mini-practice.html" class="btn btn-neutral float-right" title="Mini Practice" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Graziella.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

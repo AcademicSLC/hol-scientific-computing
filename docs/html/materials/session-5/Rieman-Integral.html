@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Riemans Integral &mdash; Lumache 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/plot_directive.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Trapezoid" href="Trapezoid.html" />
+    <link rel="prev" title="Mini Excercise" href="../session-4/mini-excercise.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Lumache
+          </a>
+              <div class="version">
+                0.1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Session 1 - Python basics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/python-basics.html"><strong>Python Basics</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/python-numbers.html"><strong>Python Numbers</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/strings.html"><strong>String</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/numpy-method.html"><em>Numpy Method</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/casting.html"><strong>Casting</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/python-data-structure.html">Data structure di Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-1/mini-practice.html"><em>Mini Practice</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 2 - Gauss Seidel</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-2/gauss-seidel.html">System Linear Equation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-2/mini-practice.html"><em>Mini Practice</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 3 - Least Square Regression</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/Interpolation.html">Interpolation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/Least-Square-Regression.html">Least Square Regression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/Newton-Polynomial-Interpolation.html">Newton Polynomial Interpolation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/Solving-Least-Square-Regression.html">Solving Problem dengan Menggunakan Persamaan Least Square Regression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/Cubic-Spline-Interpolation.html">Cubic Spline Interpolation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-3/mini-excercise.html">Mini Excercise</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 4 - Root of equations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-4/Root-of-Equations.html">Root of Equations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-4/Bisection-Method.html">Bisection Method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-4/Newton-Raphson.html">Newton Raphson Method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-4/mini-excercise.html">Mini Excercise</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 5 - Riemann integral</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Riemans Integral</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Trapezoid.html">Trapezoid</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mini-exercise.html">Mini Excercise</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Lumache</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Riemans Integral</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/materials/session-5/Rieman-Integral.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="riemans-integral">
+<h1>Riemans Integral<a class="headerlink" href="#riemans-integral" title="Permalink to this heading"></a></h1>
+<p><strong>Riemans Integral</strong> adalah sebuah <em>method</em> dan <em>konsep</em> yang digunakan dalam perhitungan kalkulus</p>
+<p>diperuntukkan untuk menghitung luas kurva fungsi pada <em>interval</em> tertentu. <strong>Riemans integral</strong> ditemukan oleh <strong>Bernhard Riemann</strong></p>
+<p>pada abad ke-19. <strong>Riemans integral</strong> digunakan untuk menghitung jumlah area pada <em>“balok-balok”</em> yang pada suatu fungsi yang nilai</p>
+<p>kurva mendekati nol.</p>
+<dl class="simple">
+<dt><strong>Riemans integral</strong> dibagi menjadi 3 jenis perhitungan, sebagai berikut:</dt><dd><ul class="simple">
+<li><p><strong>Right riemann integral</strong></p></li>
+<li><p><strong>Left riemann integral</strong></p></li>
+<li><p><strong>Mid riemann integral</strong></p></li>
+</ul>
+</dd>
+</dl>
+<p>Selanjutnya saya akan mencantumkan simulasi macam - macam <strong>Riemann Integral</strong>.</p>
+<img alt="../../_images/riemann_image.png" src="../../_images/riemann_image.png" />
+<p>Dari gambar diatas, merupakan implementasi dari macam-macam <strong>Riemann Integral</strong>. Terdapat <strong>Left Point Riemann</strong> yang menggambarkan sudut kiri dari kotak-nya. Kemudian, juga terdapat <strong>Right Riemann</strong> yang dimana garisnya bersinggungan dengan sudut kanan dari kotak pada <strong>Riemann</strong>. Kemudian yang terakhir adalah <strong>Mid-point Riemann</strong> yang bersinggungan dengan garis tengah pada kotak.</p>
+<p>berikut adalah implementasi dari <strong>riemann integral</strong>.</p>
+<p>Kita mulai dari penerapan <strong>Right riemann integral</strong>,</p>
+<p>diberikan suatu <em>persamaan</em> integral sebagai berikut.</p>
+<div class="math notranslate nohighlight">
+\[\int_{0}^{1} f(x^2) \,dx\]</div>
+<p>persamaan diatas untuk angka <code class="docutils literal notranslate"><span class="pre">0</span></code> terletak dibawah symbol integral dan angka <code class="docutils literal notranslate"><span class="pre">1</span></code> terletak diatas symbol integral dan diberikan 5 space grid pada interval integral.</p>
+<p>Kita mulai perhitungan integral dengan menggunakan <strong>left riemann</strong>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</pre></div>
+</div>
+<p><strong>Pertama-tama</strong> kita dapat melakukan <strong>import</strong> library <strong>numpy</strong> yang digunakan untuk melakukan kalkulasi matematika yang dibutuhkan.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">h</span> <span class="o">=</span> <span class="p">(</span><span class="n">b</span><span class="o">-</span><span class="n">a</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">n</span><span class="p">)</span>
+<span class="n">f</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
+</pre></div>
+</div>
+<p>Selanjutnya kita dapat melakukan inisialisasi variable apa saja yang dibutuhkan untuk melakukan kalkulasi pada riemann,</p>
+<p>seperti <code class="docutils literal notranslate"><span class="pre">a</span></code> yang digunakan untuk menandakan titik terendah interval, <code class="docutils literal notranslate"><span class="pre">b</span></code> digunakan untuk menandakan titik tertinggi pada</p>
+<p>interval. <code class="docutils literal notranslate"><span class="pre">n</span></code> sebagai total space grid yang diinisalisasi, variable <code class="docutils literal notranslate"><span class="pre">h</span></code> digunakan untuk menghitung lebar dari</p>
+<p>setiap balok yang akan dibuat, dan <code class="docutils literal notranslate"><span class="pre">x</span></code> digunakan untuk mendapatkan jumlah balok yang dapat dibuat dari interval yang tersedia.</p>
+<p>setelah itu variable <code class="docutils literal notranslate"><span class="pre">f</span></code> berposisi sebagai fungsi dari integral.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">left_r</span> <span class="o">=</span> <span class="n">h</span> <span class="o">*</span> <span class="nb">sum</span><span class="p">(</span><span class="n">f</span><span class="p">[:</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>nilai dari left riemann yang berhasil didapatkan adalah dengan implementasi rumus tersebut. Sehingga kita bisa mendapatkan</p>
+<p>nilai left riemann dari variable <code class="docutils literal notranslate"><span class="pre">left_r</span></code>.</p>
+<p>Selanjutnya adalah <strong>right riemann</strong>.</p>
+<p>Right riemann adalah cara yang digunakan untuk mendapatkan nilai dari hasil integral pada balok kedua hingga akhir.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">right_r</span> <span class="o">=</span> <span class="n">h</span> <span class="o">*</span> <span class="nb">sum</span><span class="p">(</span><span class="n">f</span><span class="p">[</span><span class="mi">1</span><span class="p">::])</span>
+</pre></div>
+</div>
+<p>Berikut adalah hasil kalkulasi right riemann.</p>
+<p>Selanjutnya adalah <strong>mid riemann</strong>.</p>
+<p>Mid riemann adalah teknik yang digunakan untuk mendapatkan nilai tengah dari dari jarak antar balok dengan balok lainnya pada riemann.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mid_r</span> <span class="o">=</span> <span class="n">h</span> <span class="o">*</span> <span class="nb">sum</span><span class="p">(</span><span class="n">f</span><span class="p">((</span><span class="n">x</span><span class="p">[:</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Berikut adalah kalkulasi untuk mid riemann. Selanjutnya adalah <strong>full code</strong> untuk <em>mid rieman</em> sebagai berikut.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">h</span> <span class="o">=</span> <span class="p">(</span><span class="n">b</span><span class="o">-</span><span class="n">a</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">n</span><span class="p">)</span>
+<span class="n">f</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="n">left_r</span> <span class="o">=</span> <span class="n">h</span> <span class="o">*</span> <span class="nb">sum</span><span class="p">(</span><span class="n">f</span><span class="p">[:</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+
+<span class="n">right_r</span> <span class="o">=</span> <span class="n">h</span> <span class="o">*</span> <span class="nb">sum</span><span class="p">(</span><span class="n">f</span><span class="p">[</span><span class="mi">1</span><span class="p">::])</span>
+
+<span class="n">mid_r</span> <span class="o">=</span> <span class="n">h</span> <span class="o">*</span> <span class="nb">sum</span><span class="p">(</span><span class="n">f</span><span class="p">((</span><span class="n">x</span><span class="p">[:</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Left riemann: </span><span class="si">{</span><span class="n">left_r</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="c1"># output untuk left right</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Right riemann: </span><span class="si">{</span><span class="n">right_r</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="c1"># output untuk right riemann</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Mid riemann: </span><span class="si">{</span><span class="n">mid_r</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="c1"># output untuk mid riemann</span>
+</pre></div>
+</div>
+<p>Berikut adalah <strong>penjelasan lengkap</strong> dari <a class="reference external" href="https://pythonnumericalmethods.studentorg.berkeley.edu/notebooks/chapter21.02-Riemanns-Integral.html">Riemann integral</a>.</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../session-4/mini-excercise.html" class="btn btn-neutral float-left" title="Mini Excercise" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Trapezoid.html" class="btn btn-neutral float-right" title="Trapezoid" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Graziella.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
