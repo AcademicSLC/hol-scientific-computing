@@ -1,4 +1,4 @@
-**String**
+String
 ==================
 
 String digunakan untuk merepresentasikan suatu value yang bersifat kata atau kalimat. String berisikan banyak character yang ketika digabung menjadi satu kata atau kalimat yang solid. Inisialisasi *string* pada python menggunakan tanda ``'`` atau ``"``.

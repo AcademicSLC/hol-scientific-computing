@@ -1,4 +1,4 @@
-**Python Numbers**
+Python Numbers
 ====================
 
 Numbers pada python digunakan untuk merepresentasikan suatu data bertipe angka. 

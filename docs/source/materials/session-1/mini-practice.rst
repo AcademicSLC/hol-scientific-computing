@@ -1,4 +1,4 @@
-*Mini Practice*
+Mini Practice
 =========================
 
 Buatlah ``list()`` yang bernama *mobil* berisikan data sebagai berikut ``Toyota, Honda Toyota, Wuling``.

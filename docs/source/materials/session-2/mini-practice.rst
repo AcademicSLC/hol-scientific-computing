@@ -1,4 +1,4 @@
-*Mini Practice*
+Mini Practice
 ================================
 
 Diberikan list matrix ``x`` dan matrix ``y``, lalu kalian selesaikan persamaan matrix yang disediakan dengan menggunakan *Gauss Seidel Method*.
