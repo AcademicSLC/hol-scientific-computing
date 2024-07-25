@@ -1,4 +1,4 @@
-*Numpy Method* 
+Numpy Method
 ============================
 
 Numpy adalah library eksternal yang dapat digunakan untuk melakukan kalkulasi matematika yang lebih advance daripada menggunakan python pada umumnya.

@@ -1,4 +1,4 @@
-**Casting** 
+Casting
 =====================
 
 Casting digunakan untuk melakukan perubahan dari tipe data lama menjadi tipe data yang baru.
