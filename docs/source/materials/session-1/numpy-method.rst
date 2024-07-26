@@ -32,9 +32,10 @@ numpy.sign(x)
 
 Berikut contoh penerapan dari ``sign()``.
 
-.. code-block:: python 
+.. code:: python 
 
     np.sign([-5., 4.5])
+
 
 .. code:: console
 
@@ -48,7 +49,7 @@ numpy.dot()
 
 Berikut adalah contoh penerapan dari ``numpy.dot()``.
 
-.. code-block:: python 
+.. code:: python 
 
     np.dot(2,6)
 
@@ -58,7 +59,7 @@ Berikut adalah contoh penerapan dari ``numpy.dot()``.
 
 Maka hasil dari code diatas sebagai berikut.
 
-.. console:: 
+.. code:: console
 
     12 
     array([[4, 1], [2, 2]]).
