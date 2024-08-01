@@ -32,11 +32,11 @@ numpy.sign(x)
 
 Berikut contoh penerapan dari ``sign()``.
 
-.. code:: python 
+.. code-block:: python 
 
     np.sign([-5., 4.5])
 
-.. code:: console 
+.. code-block:: console 
 
     array([-1.,  1.]) // output 
 
@@ -48,7 +48,7 @@ numpy.dot()
 
 Berikut adalah contoh penerapan dari ``numpy.dot()``.
 
-.. code:: python 
+.. code-block:: python 
 
     np.dot(2,6)
 
@@ -58,7 +58,7 @@ Berikut adalah contoh penerapan dari ``numpy.dot()``.
 
 Maka hasil dari code diatas sebagai berikut.
 
-.. code:: console
+.. code-block:: console
 
     12 
     array([[4, 1], [2, 2]]).
@@ -71,7 +71,7 @@ numpy.sum()
 
 Berikut adalah contoh penerapan dari ``numpy.sum()``.
 
-.. code:: python 
+.. code-block:: python 
 
     np.sum([0.5, 1.5])
     np.sum([[0, 1], [0, 5]], axis=0)
@@ -79,7 +79,7 @@ Berikut adalah contoh penerapan dari ``numpy.sum()``.
 
 Maka hasil dari code diatas adalah sebagai berikut.
 
-.. code:: console  
+.. code-block:: console  
 
     2.0
     array([0, 6])
@@ -93,13 +93,13 @@ numpy.ones()
 
 Berikut adalah contoh dari penerapan ``np.ones()``.
 
-.. code:: python
+.. code-block:: python
 
     np.ones(5)
 
 Maka hasil dari code diatas adalah sebagai berikut. 
 
-.. code:: console 
+.. code-block:: console 
 
     array([1., 1., 1., 1., 1.])
 
@@ -111,14 +111,14 @@ numpy.shape()
 
 Berikut adalah contoh dari penggunaan ``numpy.shape()``.
 
-.. code:: python
+.. code-block:: python
 
     np.shape([[1, 3]])
     np.shape([0])
 
 Maka hasil dari code diatas adalah sebagai berikut. 
 
-.. code:: console 
+.. code-block:: console 
 
     (1, 2)
     (1,)
