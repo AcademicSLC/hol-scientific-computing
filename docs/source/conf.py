@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'HOL-Scientific-Computing'
+copyright = '2024, Software Laboratory Center'
+author = 'ZY22-2'
 
 release = '0.1'
 version = '0.1.0'
