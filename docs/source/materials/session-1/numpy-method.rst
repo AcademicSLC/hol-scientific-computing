@@ -36,7 +36,8 @@ Berikut contoh penerapan dari ``sign()``.
 
     np.sign([-5., 4.5])
 
-.. code-block:: console 
+
+.. code:: console 
 
     array([-1.,  1.]) // output 
 
@@ -118,7 +119,7 @@ Berikut adalah contoh dari penggunaan ``numpy.shape()``.
 
 Maka hasil dari code diatas adalah sebagai berikut. 
 
-.. code-block:: console 
+.. code:: console 
 
     (1, 2)
     (1,)
