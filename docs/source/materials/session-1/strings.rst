@@ -9,7 +9,7 @@ contoh dari aplikasi `string` pada python sebgaia berikut:
 
     x_str = "Budi Wijaya"
 
-.. console:: 
+.. code:: python  
 
     print(x_str) // "Budi wijaya"
 
@@ -28,7 +28,7 @@ contoh aplikasi `multiline string` pada python adalah sebagai berikut:
     ketika naik odong-odong saya merasa bahagia. 
     """
 
-.. console:: 
+.. code:: python  
 
     print(x_row)
 
@@ -44,7 +44,7 @@ Berikut saya contohkan bagaimana cara mengambil satu character dari String yang 
     a = "Jordy Wira"
     print(a[1]) // mengambil string `a` pada index pertama 
 
-.. console:: 
+.. code:: python 
     o // hasil print index 
 
 
@@ -60,7 +60,7 @@ Slicing merupakan proses pengambilan index python dari start index tertentu ke i
     name = "Budiman"
     print(name[0:3])
 
-.. console:: 
+.. code:: python  
 
     Bud // hasil output 
 
@@ -77,7 +77,7 @@ Concatenate adalah proses menambahkan satu String dengan String baru lainnya.
     b = "Air"
     print(a+b)
 
-.. console:: 
+.. code:: python  
 
     Gajah Air // hasil dari concatenate antara `String` a dan b 
 
@@ -94,7 +94,7 @@ String format adalah proses dimana kita melakukan formatting String pada value S
     myproduct = "I have {}, with the quantity {}"
     print(myproduct.format(productName, quantity))
 
-.. console:: 
+.. code:: python
     
     I have book, with the quantity 12 // result
 
@@ -123,7 +123,7 @@ contoh penggunaan ``count()`` dijelaskan dibawah ini:
     print(text.count("orange")) // count berapa kali orange keluar
 
 
-.. console:: 
+.. code:: python  
 
     2 
 
@@ -141,7 +141,7 @@ contoh penggunaan ``endswith()`` dijelaskan dibawah ini:
     print(text.endswith(".")) // return true 
 
 
-.. code:: console 
+.. code:: python 
 
     True 
 
@@ -160,7 +160,7 @@ contoh penggunaan ``islower()`` dijelaskan dibawah ini:
     print(txt1)
     print(txt2)
 
-.. code:: console 
+.. code:: python 
 
     True 
     False 
