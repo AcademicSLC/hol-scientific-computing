@@ -1,6 +1,6 @@
 Hands of Lab Scientific Computing 
 ===================================
-Halo semuanya, selamat datang di *Hands of lab** materi pembelajaran praktikum *Scientific Computing*. Dalam *Hands of lab* ini kita akan mempelajari mengenai *Scientific Computing*. 
+Halo semuanya, selamat datang di *Hands of lab* materi pembelajaran praktikum *Scientific Computing*. Dalam *Hands of lab* ini kita akan mempelajari mengenai *Scientific Computing*. 
 
 Tujuan dibuatnya *Hands of lab* ini adalah sebagai edukasi sekaligus pendukung materi pembelajaran praktikum untuk mata kuliah yang mempelajari *Scientific Computing*. 
 
