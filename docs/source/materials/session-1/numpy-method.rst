@@ -37,6 +37,7 @@ Berikut contoh penerapan dari ``sign()``.
     np.sign([-5., 4.5])
 
 .. console::
+    
     array([-1.,  1.]) // output 
 
 
