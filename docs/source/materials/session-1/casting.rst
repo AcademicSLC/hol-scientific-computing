@@ -1,6 +1,11 @@
 Casting
 =====================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Casting digunakan untuk melakukan perubahan dari tipe data lama menjadi tipe data yang baru.
 
 cara menggunakan casting adalah dengan dengan memanggil *function constructor* dari python.
@@ -22,9 +27,9 @@ contoh penggunaan casting ada dibawah ini:
     b_int = 10 // angka bertipe data int 
     c_str = "1.24" // angka bertipe data string 
 
-    a_int = int(a_str) // mengubah dari `string` ke `int`
-    b_str = str(b_int) // mengubah dari `int` ke `string` 
-    c_float = float(c_str) // mengubah dari `string` ke `float`
+    a_int = int(a_str) // mengubah dari 'string' ke 'int'
+    b_str = str(b_int) // mengubah dari 'int' ke 'string'
+    c_float = float(c_str) // mengubah dari 'string' ke 'float'
 
     print(a_int) 
     print(b_str)

@@ -1,6 +1,11 @@
 Least Square Regression 
 =================================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Least Square Regression adalah suatu teknik analisis data yang cukup sering digunakan dalam penelitian. 
 
 Least square regression dikaitkan erat dengan regresi linear. Least square regression bisa digunakan untuk melakukan analisis antara variable dependent dan independent pada suatu proses analisis data. 

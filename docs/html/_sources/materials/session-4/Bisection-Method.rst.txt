@@ -1,6 +1,11 @@
 Bisection Method
 ========================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Bisection method adalah sebuah teknik untuk menentukan root pada suatu persamaan yang memiliki interval. 
 
 setelah itu ketika kita sudah memiliki interval suatu persamaan matematika, kita dapat memilih 2 titik untuk menentukan 

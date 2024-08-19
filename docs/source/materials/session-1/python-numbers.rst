@@ -1,6 +1,11 @@
 Python Numbers
 ====================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Numbers pada python digunakan untuk merepresentasikan suatu data bertipe angka. 
 
 Python numbers memiliki beberapa tipe data angka seperti berikut:

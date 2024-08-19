@@ -1,6 +1,11 @@
 Numpy Method
 ============================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Numpy adalah library eksternal yang dapat digunakan untuk melakukan kalkulasi matematika yang lebih advance daripada menggunakan python pada umumnya.
 
 Ketika ingin memanggil function *numpy*, kita diharuskan untuk menginstall terlebih dahulu. 

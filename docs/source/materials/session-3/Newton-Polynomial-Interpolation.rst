@@ -1,6 +1,11 @@
 Newton Polynomial Interpolation 
 ======================================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Newton Polynomial Interpolation adalah sebuah cara yang digunakan untuk menentukan dan menyesuaikan 
 
 titik dari sekumpulan data yang tersedia.

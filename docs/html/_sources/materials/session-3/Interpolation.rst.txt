@@ -1,6 +1,11 @@
 Interpolation 
 =====================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Interpolasi adalah proses memprediksi hasil kalkulasi dengan memperhatikan data-data lain yang kita miliki. 
 
 Interpolasi merupakan sebuah teknik untuk memprediksi angka yang hilang pada urutan data atau list data yang dimiliki. 

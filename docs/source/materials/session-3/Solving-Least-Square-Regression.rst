@@ -1,6 +1,11 @@
 Solving Problem dengan Menggunakan Persamaan Least Square Regression
 ===============================================================================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Sekarang, saatnya kita melakukan penyelesaian permasalahan persamaan dengan menggunakan metode Least Square Regression.
 
 Terdapat 2 cara penyelesaian dengan metode Least Square Regression, yaitu sebagai berikut: 

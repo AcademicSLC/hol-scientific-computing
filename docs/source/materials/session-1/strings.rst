@@ -1,6 +1,11 @@
 String
 ==================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 String digunakan untuk merepresentasikan suatu value yang bersifat kata atau kalimat. String berisikan banyak character yang ketika digabung menjadi satu kata atau kalimat yang solid. Inisialisasi *string* pada python menggunakan tanda ``'`` atau ``"``.
 
 contoh dari aplikasi `string` pada python sebgaia berikut: 

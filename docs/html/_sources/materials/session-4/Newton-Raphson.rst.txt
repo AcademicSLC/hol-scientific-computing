@@ -1,6 +1,11 @@
 Newton Raphson Method 
 =============================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 **Newton raphson** adalah sebuah teknik yang digunakan untuk memecahkan permasalahan dari nilai 
 
 **akar-akar** pada suatu *persamaan*. **Newton raphson** ditemukan oleh **Sir Isaac Newton** dan **Joseph Raphson**. 

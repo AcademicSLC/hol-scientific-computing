@@ -1,6 +1,11 @@
 Data structure di Python 
 ===============================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Python memiliki beberapa **struktur data** yang bersifat `built-in function`, **struktur data** tersebut dapat digunakan untuk menampung berbagai macam data 
 
 berdasarkan jumlah memori yang digunakan untuk menampung berbagai macam data tersebut. `Jenis-jenis` **struktur data** yang terdapat pada **python** antara lain 

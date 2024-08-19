@@ -1,6 +1,11 @@
 Mini Excercise 
 ======================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Diberikan suatu data ``x`` dan ``y`` yang dimana data tersebut akan digunakan untuk 
 
 analisis dan prediksi output dari data yang dimiliki. Berikut merupakan data ``x`` dan ``y`` 

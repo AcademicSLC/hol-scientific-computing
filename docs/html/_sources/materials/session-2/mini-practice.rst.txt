@@ -1,5 +1,10 @@
-*Mini Practice*
+Mini Practice
 ================================
+
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
 
 Diberikan list matrix ``x`` dan matrix ``y``, lalu kalian selesaikan persamaan matrix yang disediakan dengan menggunakan *Gauss Seidel Method*.
 

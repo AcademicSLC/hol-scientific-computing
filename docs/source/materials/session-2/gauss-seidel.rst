@@ -1,6 +1,11 @@
 System Linear Equation 
 ==================================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 *System Linear Equation* adalah proses **kalkukalasi** dua atau lebih **suatu persamaan linear** untuk mendapatkan nilai dari suatu variabel. 
 
 Terdapat berbagai cara untuk menyelesaikan *System Linear Equation*, akan tetapi pada mata kuliah Scientific Computing kalkulasi *System Linear Equation* yang dipelajari adalah *Gauss Seidel Linear Equation*. 

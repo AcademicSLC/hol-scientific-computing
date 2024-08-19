@@ -1,6 +1,11 @@
 Cubic Spline Interpolation 
 ====================================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 **Cubic Spline Interpolation** adalah salah satu metode interpolasi yang menggunakan *polinomial*(persamaan suku banyak)
 
 **Cubic Spline Interpolation polinomial** dengan suku 3 (cubic) yang menghubungkan dua titik yang bersebalahan. 
