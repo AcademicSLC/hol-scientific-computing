@@ -115,7 +115,7 @@ Berikut ada beberapa contoh method String yang akan dibahas:
     * islower()
 
 
-- count()
+- **count()**
 -------------------
 
 ``count()`` merupakan method yang digunakan untuk menghitung berapa kali jumlah kata atau huruf yang dicari itu muncul di dalam **string** yang kita deklarasi. 
@@ -151,7 +151,7 @@ contoh penggunaan ``endswith()`` dijelaskan dibawah ini:
     True 
 
 
-- islower()
+- **islower()**
 -------------------
 
 ``islower()`` merupakan method yang digunakan untuk melakukan validasi apakah **string** yang diinisiasi seluruhnya merupakan lower case.
