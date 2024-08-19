@@ -1,6 +1,11 @@
 Answer All Excercise 
 ==========================
 
+.. note::
+
+    Semua codingan yang ada disini jika di copy paste sama persis akan dianggap sebagai kecurangan
+
+
 Dibawah ini merupakan data terkait **answer jawaban** pada setiap **mini practice** yang terdapat pada setiap **session**. 
 
 Answer mini practice session 1
